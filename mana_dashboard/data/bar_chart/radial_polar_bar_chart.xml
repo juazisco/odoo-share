@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- radial polar bar chart -->
+        <record id="mana_dashboard.template_radial_polar_bar_chart" model="mana_dashboard.template">
+            <field name="name">Radial polar Bar Chart</field>
+            <field name="category">chart</field>
+            <field name="type">bar chart</field>
+            <field name="component_type">bar_chart</field>
+            <field name="preview" type="base64" file="mana_dashboard/static/previews/bar_chart/radial_polar_bar_chart.png"/>
+            <field name="has_styles">False</field>
+            <field name="has_template">False</field>
+            <field name="supported_result_types" eval="[(6, 0, [ref('mana_dashboard_base.result_type_standard')])]"/>
+            <field name="supported_series_types" eval="[(6, 0, [ref('mana_dashboard.series_type_bar'), ref('mana_dashboard.series_type_line')])]"/>
+            <field name="default_data_source_type" ref="mana_dashboard_base.data_source_none"/>   
+            <field name="scripts">
+                <![CDATA[
+// config
+let config = this.get_config();
+// get the datasource
+let data_source = this.get_data_source();
+// get the catorgories
+let categories = data_source.get_categories();
+if (categories.length == 0) {
+  return;
+}
+
+// get the measures
+let measures = data_source.get_measures();
+
+// generate the series, you can change option here
+//  https://echarts.apache.org/en/option.html#series-bar
+let series = []
+for (let i = 0; i < measures.length; i++) {
+  let measure = measures[i];
+  let raw_field = data_source.get_raw_field(measure);
+  series.push({
+    type: raw_field && raw_field.series_type || 'bar',
+    data: data_source.get_col_values(measure),
+    coordinateSystem: 'polar',
+    label: {
+      show: true,
+      position: 'middle',
+      formatter: '{b}: {c}',
+    }
+  })
+}
+
+let option = {
+  title: [
+    {
+      text: config.get_title(),
+    }
+  ],
+  polar: {
+    radius: [30, '80%']
+  },
+  radiusAxis: {
+    max: 4
+  },
+  angleAxis: {
+    type: 'category',
+    data: data_source.get_col_values(categories[0], (val) => {
+      if (val instanceof Array) {
+          if (val.length == 2) {
+                return {
+                  value: val[1],
+                  origin_value: val
+                }
+            }
+          } 
+
+          if (data_source.is_selection(categories[0])) {
+            return {
+              value: data_source.get_selection_val(categories[0], val),
+              origin_value: val,
+            }
+          }
+
+          return val
+      }),
+    startAngle: 75
+  },
+  tooltip: {},
+  series: series,
+  animation: false
+};
+
+this.setOption(option)
+]]>
+            </field>
+            <!-- default code -->
+            <field name="default_scripts">
+                <![CDATA[
+let option = {
+  title: [
+    {
+      text: 'Radial Polar Bar Label Position (middle)'
+    }
+  ],
+  polar: {
+    radius: [30, '80%']
+  },
+  radiusAxis: {
+    max: 4
+  },
+  angleAxis: {
+    type: 'category',
+    data: ['a', 'b', 'c', 'd'],
+    startAngle: 75
+  },
+  tooltip: {},
+  series: {
+    type: 'bar',
+    data: [2, 1.2, 2.4, 3.6],
+    coordinateSystem: 'polar',
+    label: {
+      show: true,
+      position: 'middle',
+      formatter: '{b}: {c}'
+    }
+  },
+  animation: false
+};
+this.setOption(option);
+]]>
+            </field>
+        </record>
+    </data>
+</odoo>

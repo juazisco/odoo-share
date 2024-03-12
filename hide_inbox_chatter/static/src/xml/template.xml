@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-inherit="mail.MessagingMenu" t-inherit-mode="extension" owl="1">
+        <xpath expr="//Dropdown" position="replace">
+        </xpath>
+        <xpath expr="//t[@t-call='mail.MessagingMenu.content']"   position="replace">
+        </xpath>
+        </t>
+</templates>

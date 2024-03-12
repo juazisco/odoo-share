@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="hr_minsa_hr_employee_view_form" model="ir.ui.view">
+        <field name="name">minsa.hr.employee.view.form.inherit</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='public']" position="after">
+                <page string="Períodos de trabajo remoto" name="remote_attendance_period">
+                    <field name="remote_ids">
+                        <tree widget="one2many_list">
+                            <field name="start_date"/>
+                            <field name="end_date"/>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="minsa_hr_attendance_remote_view_form" model="ir.ui.view">
+        <field name="name">hr.attendance.remote.form</field>
+        <field name="model">hr.attendance.remote</field>
+        <field name="type">form</field>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+            <form string="Employee remote attendances">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="start_date"/>
+                        </group>
+                        <group>
+                            <field name="end_date"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

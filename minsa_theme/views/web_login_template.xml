@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="web_login_layout_inherit" inherit_id="web.login_layout" name="Web Login Layout">
+        <xpath expr="//div[@class='card-body']//div[last()]" position="replace">
+            <div class="text-center small mt-4 pt-3 login--footer" t-if="not disable_footer">
+            </div>
+        </xpath>
+    </template>
+
+    <template id="custom_login" name="Custom Login" inherit_id="web.login">
+        <xpath expr="//div[@class='mb-3 field-login']" position="replace">
+            <label for="login" class="form-label">Usuario</label>
+            <input type="text" placeholder="Usuario" name="login" t-att-value="login" id="login" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" autocomplete="username" autofocus="autofocus" autocapitalize="off"/>
+        </xpath>
+    </template>
+</odoo>

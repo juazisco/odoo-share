@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="mana_dashboard.assets_subtype_background"  model="mana_dashboard.assets_sub_type">
+            <field name="name">Background</field>
+        </record>
+
+        <record id="mana_dashboard.assets_subtype_border"  model="mana_dashboard.assets_sub_type">
+            <field name="name">Border</field>
+        </record>
+
+        <record id="mana_dashboard.assets_subtype_title"  model="mana_dashboard.assets_sub_type">
+            <field name="name">Title</field>
+        </record>
+
+        <record id="mana_dashboard.assets_subtype_button"  model="mana_dashboard.assets_sub_type">
+            <field name="name">Button</field>
+        </record>
+
+    </data>
+</odoo>

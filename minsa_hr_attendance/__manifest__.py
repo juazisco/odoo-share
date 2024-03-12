@@ -1,0 +1,26 @@
+{
+    'name': 'Registro de asistencias',
+    'version': '17.0.0.0',
+    'category': 'rrhh',
+    'summary': 'Registro de asistencias',
+    'description': '',
+    'author': 'MINSA',
+    'license': 'LGPL-3',
+    'website': 'https://minsa.gob.pe',
+    'depends': [
+        'base',
+        'mail',
+        'hr',
+        'hr_attendance',
+    ],
+    'data': [
+        'security/security.xml',
+        'security/ir.model.access.csv',
+        'views/hr_attendance_views.xml',
+        'views/hr_employee_views.xml',
+        'wizards/hr_attendance_wizards.xml',
+    ],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+}

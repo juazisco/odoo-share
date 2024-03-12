@@ -1,0 +1,20 @@
+<odoo>
+    <data>
+
+        <!-- a window to manage client action -->
+        <record model="ir.actions.act_window" id="mana_dashboard.dashboard_actions_manage">
+            <field name="name">Client Action</field>
+            <field name="res_model">ir.actions.client</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('tag','=','mana_dashboard')]</field>
+        </record>
+
+        <!-- menu -->
+        <menuitem name="Dashboard Actions" 
+            id="mana_dashboard.dashboard_actions_menu"
+            sequence="0"
+            parent="mana_dashboard.dashboard_resource_menu" 
+            action="mana_dashboard.dashboard_actions_manage"/> 
+
+    </data>
+</odoo>  

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <record id="oehealth_samu_attendance_report_wizard_view" model="ir.ui.view">
+        <field name="name">hr.attendance.wizard.form</field>
+        <field name="model">hr.attendance.report.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="start_date" />
+                        <field name="end_date" />
+                    </group>
+                </group>
+                <group>
+                    <field name="report_type" />
+                </group>
+                <footer>
+                    <button name="download_pdf" type="object" class="oe_highlight" string="Descargar reporte" />
+          o
+                    <button name="cancel" string="Cancel" special="cancel" class="oe_link" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action for the attendance filter wizard -->
+    <record id="hr_attendance_report_wizard_action" model="ir.actions.act_window">
+        <field name="name">Attendance Filter</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hr.attendance.report.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_hr_attendance_view_attendances" name="Reporte de registro de asistencias" parent="hr_attendance.menu_hr_attendance_root" sequence="100" groups="minsa_hr_attendance.group_hr_attendance_user" action="hr_attendance_report_wizard_action"/>
+
+</odoo>

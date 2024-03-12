@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="mana_dashboard.assets_type_image"  model="mana_dashboard.assets_type">
+            <field name="name">Image</field>
+        </record>
+
+        <record id="mana_dashboard.assets_type_title"  model="mana_dashboard.assets_type">
+            <field name="name">Title</field>
+        </record>
+
+        <record id="mana_dashboard.assets_type_button"  model="mana_dashboard.assets_type">
+            <field name="name">Button</field>
+        </record>
+
+        <record id="mana_dashboard.assets_type_misc"  model="mana_dashboard.assets_type">
+            <field name="name">Misc</field>
+        </record>
+
+    </data>
+</odoo>

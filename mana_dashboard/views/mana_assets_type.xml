@@ -1,0 +1,44 @@
+
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="mana_dashboard.assets_type_list">
+            <field name="name">assets type list </field>
+            <field name="model">mana_dashboard.assets_type</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" string="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="mana_dashboard.assets_type_form">
+            <field name="name">assets type form </field>
+            <field name="model">mana_dashboard.assets_type</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="form-group row">
+                            <label for="name" class="col-sm-2 col-form-label">name</label>
+                            <div class="col-sm-10">
+                                <field name="name" string="name"/>
+                            </div>
+                        </div>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="mana_dashboard.assets_type_act_window">
+            <field name="name">Assets Type</field>
+            <field name="res_model">mana_dashboard.assets_type</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="Assets Type" 
+            id="mana_dashboard.assets_type_menu" 
+            parent="mana_dashboard.dashboard_resource_menu" 
+            action="mana_dashboard.assets_type_act_window"/>
+              
+    </data>
+</odoo>

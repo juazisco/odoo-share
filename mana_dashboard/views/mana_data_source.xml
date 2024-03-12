@@ -1,0 +1,307 @@
+
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="mana_dashboard.data_source_list">
+            <field name="name">mana data source list </field>
+            <field name="model">mana_dashboard.data_source</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="data_source_mixin_id" string="data_source_mixin_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="mana_dashboard.data_source_form">
+            <field name="name">mana data source form </field>
+            <field name="model">mana_dashboard.data_source</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+
+                        <div class="row">
+                            <!-- 6 col -->
+                            <div class="col-sm-6">
+
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label" for="name">name</label>
+                                    <div class="col-sm-4">
+                                        <field name="name" required="1" />
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label" for="data_source_type">data_source_type</label>
+                                    <div class="col-sm-8">
+                                        <field name="data_source_type" options="{'no_create': True, 'no_create_edit': True, 'no_open': True}" required="1"/>
+                                    </div>
+                                </div>
+
+                                <field name="has_group_by" invisible="1"/> 
+                                <field name="has_time_field" invisible="1"/>
+                                <field name="config_id" invisible="1" force_save="1"/>
+                                <field name="data_source_type_name" invisible="1"/>
+                                <field name="result_type_domain_ids" invisible="1"/>
+                                <field name="data_source_type_domain_ids" invisible="1"/>
+
+                                <!-- model  -->
+                                <div class="form-group row" invisible="data_source_type_name not in ['model', 'method']">
+                                    <label class="col-sm-4 col-form-label" for="model">model</label>
+                                    <div class="col-sm-8">
+                                        <field name="model" required="data_source_type_name in ['model', 'method']" options="{'no_create': True, 'no_create_edit': True, 'no_open': True}"/>
+                                    </div>
+                                </div>
+
+                                <!-- result_type -->
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label" for="result_type">result_type</label>
+                                    <div class="col-sm-8">
+                                        <field name="result_type_domain_ids" invisible="1"/>
+                                        <field name="result_type" required="1" options="{'no_create': True, 'no_create_edit': True, 'no_open': True}"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <field name="has_group_by" invisible="1"/> 
+                        <field name="has_time_field" invisible="1"/>
+                        <field name="dashboard_id" invisible="1"/>
+                        <field name="result_type_domain_ids" invisible="1"/>
+                        <field name="data_source_type_domain_ids" invisible="1"/>
+                        <field name="model_name" invisible="1"/>
+
+                        <!-- notebook -->
+                        <notebook>
+
+                            <!-- Basic -->
+                            <page string="Basic" invisible="data_source_type_name in ['model', 'none']">
+                            
+                                <!-- method  -->
+                                <div class="form-group row" invisible="data_source_type_name != 'method'">
+                                    <label class="col-sm-2 col-form-label" for="method">method</label>
+                                    <div class="col-sm-10">
+                                        <field name="method" required="data_source_type_name == 'method'" />
+                                    </div>
+                                </div>
+
+                                <!-- sql  -->
+                                <div class="form-group row" invisible="data_source_type_name != 'sql'">
+                                    <label class="col-sm-2 col-form-label" for="sql">sql</label>
+                                    <div class="col-sm-10">
+                                        <field name="sql" required="data_source_type_name == 'sql'" widget="ace"/>
+                                    </div>
+                                </div>
+
+                                <!-- res_id  -->
+                                <div class="form-group row" invisible="data_source_type_name != 'record'">
+                                    <label class="col-sm-2 col-form-label" for="res_id">res_id</label>
+                                    <div class="col-sm-10">
+                                        <field name="res_id" required="data_source_type_name == 'record'"/>
+                                    </div>
+                                </div>
+
+                                <!-- json_data_format -->
+                                <div class="form-group row" invisible="data_source_type_name != 'json'">
+                                    <label class="col-sm-2 col-form-label" for="json_data_format">json_data_format</label>
+                                    <div class="col-sm-10">
+                                        <field name="json_data_format" required="data_source_type_name == 'json'"/>
+                                    </div>
+                                </div>
+
+                                <!-- json -->
+                                <div class="form-group row" invisible="data_source_type_name != 'json'">
+                                    <label class="col-sm-2 col-form-label" for="json_data">json_data</label>
+                                    <div class="col-sm-10">
+                                        <field name="json_data" required="data_source_type_name == 'json'" widget="ace"/>
+                                    </div>
+                                </div>
+
+                                <!-- code -->
+                                <div class="form-group row" invisible="data_source_type_name != 'code'">
+                                    <label class="col-sm-12 col-form-label" for="code">code</label>
+                                    <div class="col-sm-12">
+                                        <field name="code" required="data_source_type_name == 'code'" widget="ace"/>
+                                    </div>
+                                </div>
+
+                            </page>
+
+                            <!-- parameter -->
+                            <page string="Parameters" invisible="data_source_type_name not in ['sql', 'code', 'method']">
+                                <field name="parameter_ids" >
+                                    <tree>
+                                        <field name="name" />
+                                        <field name="type" />
+                                        <field name="default_value" />
+                                    </tree>
+                                </field>
+                            </page>
+
+                            <!-- page group by -->
+                            <page string="Group By" invisible="data_source_type_name != 'model'">
+                                <!-- group by infos -->
+                                <div class="form-group row" invisible="data_source_type_name != 'model' and model == False">
+                                    <div class="col-sm-12">
+                                        <field name="group_by_infos" required="data_source_type_name == 'model'">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="field" options="{'no_create': True, 'no_create_edit': True, 'no_open': True, 'equal_parent': 'model', 'domain_field_name': 'model_id'}" domain="[('model_id', '=', parent.model)]" />
+                                                <field name="field_name" />
+                                                <field name="show_granularity" column_invisible="1"/>
+                                                <field name="granularity" invisible="show_granularity == False"/>
+
+                                                <field name="field_type" column_invisible="1"/>
+                                                <field name="field_description" column_invisible="1"/>
+                                                <field name="show_granularity" column_invisible="1"/>
+                                                <field name="full_name" column_invisible="1"/>
+                                            </tree>
+                                        </field>
+                                    </div>
+                                </div>
+                            </page>
+
+                            <page string="Fields" invisible="data_source_type_name != 'model'">
+                                
+                                <!-- fields -->
+                                <div class="form-group row" invisible="data_source_type_name != 'model'">
+                                    <div class="col-sm-12">
+                                        <field name="model_fields" required="data_source_type_name == 'model'" invisible="model_name == False">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="field" options="{'no_create': True, 'no_create_edit': True, 'no_open': True, 'equal_parent': 'model', 'domain_field_name': 'model_id'}" domain="[('model_id', '=', parent.model)]"  />
+                                                <field name="field_name" />
+                                                <field name="measure" widget="boolean_toggle"/>
+                                                <field name="aggregation" column_invisible="parent.has_group_by == False" options="{'no_create': True, 'no_create_edit': True, 'no_open': True}"/>
+
+                                                <field name="aggregation_domain_ids" column_invisible="1"/>
+                                                <field name="full_name" column_invisible="1"/> 
+                                                <field name="show_time" column_invisible="1"/>
+                                                <field name="field_type" column_invisible="1"/>
+                                                <field name="field_description" column_invisible="1"/>
+                                                <field name="show_compare_with_last_period" column_invisible="1"/>
+                                                <field name="show_get_last_period" column_invisible="1"/>
+
+                                                <!-- relative to -->
+                                                <field name="relative_to" invisible="show_time == False" column_invisible="parent.has_time_field == False" />
+
+                                                <field name="datetime_range" invisible="show_time == False" column_invisible="parent.has_time_field == False"/>
+                                                <field name="start_time" invisible="show_time == False" column_invisible="parent.has_time_field == False"/>
+                                                <field name="end_time" invisible="show_time == False" column_invisible="parent.has_time_field == False"/>
+
+                                                <field name="affect_by_global" widget="boolean_toggle" invisible="show_time==False" column_invisible="parent.has_time_field == False"/>
+
+                                                <!-- search key -->
+                                                <field name="search_key" />
+
+                                                <!-- compare -->
+                                                <field name="get_last_period" 
+                                                    widget="mutex_toggle"
+                                                    invisible="show_get_last_period == False"
+                                                    column_invisible="parent.has_time_field == False" />
+
+                                            </tree>
+                                        </field>
+                                    </div>
+                                </div>
+                            </page>
+
+                            <!-- ordery by -->
+                            <page string="Order By" invisible="data_source_type_name != 'model'">
+                                <!-- order by info -->
+                                <div class="form-group row" invisible="data_source_type_name != 'model' and model == False">
+                                    <div class="col-sm-12">
+                                        <field name="order_by_infos" required="data_source_type_name == 'model'">
+                                            <tree editable="bottom">
+                                                <field name="sequence" widget="handle"/>
+                                                <field name="field" options="{'no_create': True, 'no_create_edit': True, 'no_open': True, 'equal_parent': 'model', 'domain_field_name': 'model_id'}" domain="[('model_id', '=', parent.model)]" />
+                                                <field name="field_name" />
+                                                <field name="order_type"/>
+                                                <field name="full_name" column_invisible="1"/>
+                                            </tree>
+                                        </field>
+                                    </div>
+                                </div>
+                            </page>
+
+                            <!-- Other -->
+                            <page string="Domain&amp;Context" invisible="data_source_type_name != 'model'">
+                        
+                                <!-- domain  -->
+                                <div class="form-group row" invisible="data_source_type_name != 'model'">
+                                    <label class="col-sm-2 col-form-label" for="domain">domain</label>
+                                    <div class="col-sm-10">
+                                        <!-- model_name -->
+                                        <field name="model_name" invisible="1"/>
+                                        <field name="domain" widget="domain" options="{'model': 'model_name'}"/>
+                                    </div>
+                                </div>
+
+                                <!-- context -->
+                                <div class="form-group row" invisible="data_source_type_name == 'model'">
+                                    <label class="col-sm-2 col-form-label" for="context">context</label>
+                                    <div class="col-sm-10">
+                                        <field name="context"/>
+                                    </div>
+                                </div>
+
+                                <!-- limit -->
+                                <div class="form-group row" invisible="data_source_type_name != 'model'">
+                                    <label class="col-sm-2 col-form-label" for="limit">limit</label>
+                                    <div class="col-sm-10">
+                                        <field name="limit"/>
+                                    </div>
+                                </div>
+
+                            </page>
+
+                            <!-- help -->
+                            <page string="config_help">
+                                <field name="config_help" widget="html" readonly="1" class="mb-2" />
+                            </page>
+                        
+                        </notebook>
+
+                        <!-- query button -->
+                        <div class="d-flex" style="margin-top:10px; margin-bottom: 10px" invisible="data_source_type_name == 'none'">
+                            <button name="mana_dashboard.do_query" special="save_and_notify" string="Query" type="object" class="btn btn-primary" />
+                        </div>
+                        
+                        <!-- fake_field -->
+                        <field name="fake_field" widget="fake_field" class="d-none" />
+
+                        <notebook invisible="data_source_type_name == 'none'">
+                            <!-- raw fields -->
+                            <page string="Result Fields">
+                                <!-- raw_fields -->
+                                <field name="raw_fields">
+                                    <tree create="0" delete="0" editable="bottom" limit="10">
+                                        <field name="sequence" widget="handle"/>
+                                        <field name="name" readonly="1" force_save="1" />
+                                        <field name="measure" widget="boolean_toggle" />
+                                        <field name="show_measure" column_invisible="1" />
+                                        <field name="category" widget="mutex_toggle" />
+                                        <field name="show_category" column_invisible="1" />
+                                        <field name="column_arggregation" />
+                                    </tree>
+                                </field>
+                            </page>
+
+                            <!-- result preview -->
+                            <page string="Result Datas">
+                                <field name="last_result" widget="grid_widget" style="width:100%" />
+                            </page>
+
+                        </notebook>
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="mana_dashboard.data_source_act_window">
+            <field name="name">mana data source</field>
+            <field name="res_model">mana_dashboard.data_source</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+    </data>
+</odoo>

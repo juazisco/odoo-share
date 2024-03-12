@@ -1,0 +1,46 @@
+{
+    "model_type": "base",
+    "model_name": "res.partner",
+    "strategy": "last version",
+    "key": "process_1",
+    "version": "1.0.4",
+    "binding_view_infos": [
+        {
+            "view_res_id": "base.view_partner_form",
+            "display_control_infos": [
+                {
+                    "bpmn_ids": [
+                        "Activity_0b4qu4m"
+                    ],
+                    "view_res_id": "base.view_partner_form",
+                    "fields_control": [
+                        {
+                            "field_names": [
+                                "active"
+                            ],
+                            "groups": [
+                                "base.group_erp_manager"
+                            ],
+                            "readonly": false,
+                            "required": false,
+                            "invisible": false
+                        }
+                    ],
+                    "operation_control": [
+                        {
+                            "can_delete": true,
+                            "can_create": true,
+                            "can_edit": true,
+                            "groups": [
+                                "base.group_erp_manager"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "use_special_workflow_define": false,
+            "special_workflow_define_version": false,
+            "special_workflow_define_key": false
+        }
+    ]
+}

@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+    <!-- bk_1.jpg -->
+    <record id="mana_dashboard.assets_bk_1" model="mana_dashboard.assets">
+        <field name="name">BG1</field>
+        <field name="sequence">1</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_1.jpg" />
+    </record>
+
+    <!-- bk_2.png -->
+    <record id="mana_dashboard.assets_bk_2" model="mana_dashboard.assets">
+        <field name="name">BG2</field>
+        <field name="sequence">2</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_2.png" />
+    </record>
+
+    <!-- bk_3.jpg -->
+    <record id="mana_dashboard.assets_bk_3" model="mana_dashboard.assets">
+        <field name="name">BG3</field>
+        <field name="sequence">3</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_3.jpg" />
+    </record>
+
+    <!-- bk_4.jpg -->
+    <record id="mana_dashboard.assets_bk_4" model="mana_dashboard.assets">
+        <field name="name">BG4</field>
+        <field name="sequence">4</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_4.png" />
+    </record>
+
+    <!-- bk_5.jpg -->
+    <record id="mana_dashboard.assets_bk_5" model="mana_dashboard.assets">
+        <field name="name">BG5</field>
+        <field name="sequence">5</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_5.png" />
+    </record>
+
+    <!-- bk_6.jpg -->
+    <record id="mana_dashboard.assets_bk_6" model="mana_dashboard.assets">
+        <field name="name">BG6</field>
+        <field name="sequence">6</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_6.png" />
+    </record>
+
+    <!-- bk_7.jpg -->
+    <record id="mana_dashboard.assets_bk_7" model="mana_dashboard.assets">
+        <field name="name">BG7</field>
+        <field name="sequence">7</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_7.jpg" />
+    </record>
+
+    <!-- bk_8.jpg -->
+    <record id="mana_dashboard.assets_bk_8" model="mana_dashboard.assets">
+        <field name="name">BG8</field>
+        <field name="sequence">8</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_8.png" />
+    </record>
+
+    <!-- bk_9.jpg -->
+    <record id="mana_dashboard.assets_bk_9" model="mana_dashboard.assets">
+        <field name="name">BG9</field>
+        <field name="sequence">9</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_9.png" />
+    </record>
+
+    <!-- bk_10.jpg -->
+    <record id="mana_dashboard.assets_bk_10" model="mana_dashboard.assets">
+        <field name="name">BG10</field>
+        <field name="sequence">10</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_10.jpg" />
+    </record>
+
+    <!-- bk_11.png -->
+    <record id="mana_dashboard.assets_bk_11" model="mana_dashboard.assets">
+        <field name="name">BG11</field>
+        <field name="sequence">11</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_11.png" />
+    </record>
+
+    <!-- bk_12.png -->
+    <record id="mana_dashboard.assets_bk_12" model="mana_dashboard.assets">
+        <field name="name">BG12</field>
+        <field name="sequence">12</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_12.png" />
+    </record>
+
+    <!-- bk_13.png -->
+    <record id="mana_dashboard.assets_bk_13" model="mana_dashboard.assets">
+        <field name="name">BG13</field>
+        <field name="sequence">13</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_13.png" />
+    </record>
+
+    <!-- bk_14.png -->
+    <record id="mana_dashboard.assets_bk_14" model="mana_dashboard.assets">
+        <field name="name">BG14</field>
+        <field name="sequence">14</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_14.png" />
+    </record>
+
+    <!-- bk_15.jpg -->
+    <record id="mana_dashboard.assets_bk_15" model="mana_dashboard.assets">
+        <field name="name">BG15</field>
+        <field name="sequence">15</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_15.jpg" />
+    </record>
+
+    <!-- bk_16.png -->
+    <record id="mana_dashboard.assets_bk_16" model="mana_dashboard.assets">
+        <field name="name">BG16</field>
+        <field name="sequence">16</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_16.png" />
+    </record>
+
+    <!-- bk_17.jpg -->
+    <record id="mana_dashboard.assets_bk_17" model="mana_dashboard.assets">
+        <field name="name">BG17</field>
+        <field name="sequence">17</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_17.jpg" />
+    </record>
+
+    <!-- bk_18.jpg -->
+    <record id="mana_dashboard.assets_bk_18" model="mana_dashboard.assets">
+        <field name="name">BG18</field>
+        <field name="sequence">18</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_18.jpg" />
+    </record>
+
+    <!-- bk_19.jpg -->
+    <record id="mana_dashboard.assets_bk_19" model="mana_dashboard.assets">
+        <field name="name">BG19</field>
+        <field name="sequence">19</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_19.jpg" />
+    </record>
+
+    <!-- bk_20.png -->
+    <record id="mana_dashboard.assets_bk_20" model="mana_dashboard.assets">
+        <field name="name">BG20</field>
+        <field name="sequence">20</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_20.png" />
+    </record>
+
+    <!-- bk_21.png -->
+    <record id="mana_dashboard.assets_bk_21" model="mana_dashboard.assets">
+        <field name="name">BG21</field>
+        <field name="sequence">21</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_21.png" />
+    </record>
+
+    <!-- bk_22.jpg -->
+    <record id="mana_dashboard.assets_bk_22" model="mana_dashboard.assets">
+        <field name="name">BG22</field>
+        <field name="sequence">22</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_22.jpg" />
+    </record>
+
+    <!-- bk_23.png -->
+    <record id="mana_dashboard.assets_bk_23" model="mana_dashboard.assets">
+        <field name="name">BG23</field>
+        <field name="sequence">23</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_23.png" />
+    </record>
+
+    <!-- bk_24.png -->
+    <record id="mana_dashboard.assets_bk_24" model="mana_dashboard.assets">
+        <field name="name">BG24</field>
+        <field name="sequence">24</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_24.png" />
+    </record>
+
+    <!-- bk_25.png -->
+    <record id="mana_dashboard.assets_bk_25" model="mana_dashboard.assets">
+        <field name="name">BG25</field>
+        <field name="sequence">25</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_25.png" />
+    </record>
+
+    <!-- bk_26.jpg -->
+    <record id="mana_dashboard.assets_bk_26" model="mana_dashboard.assets">
+        <field name="name">BG26</field>
+        <field name="sequence">26</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_26.jpg" />
+    </record>
+
+    <!-- bk_27.png -->
+    <record id="mana_dashboard.assets_bk_27" model="mana_dashboard.assets">
+        <field name="name">BG27</field>
+        <field name="sequence">27</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_27.png" />
+    </record>
+
+    <!-- bk_28.png -->
+    <record id="mana_dashboard.assets_bk_28" model="mana_dashboard.assets">
+        <field name="name">BG28</field>
+        <field name="sequence">28</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_28.png" />
+    </record>
+
+    <!-- bk_29.png -->
+    <record id="mana_dashboard.assets_bk_29" model="mana_dashboard.assets">
+        <field name="name">BG29</field>
+        <field name="sequence">29</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_29.png" />
+    </record>
+
+    <!-- bk_30.png -->
+    <record id="mana_dashboard.assets_bk_30" model="mana_dashboard.assets">
+        <field name="name">BG30</field>
+        <field name="sequence">30</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_30.png" />
+    </record>
+
+    <!-- bk_31.png -->
+    <record id="mana_dashboard.assets_bk_31" model="mana_dashboard.assets">
+        <field name="name">BG31</field>
+        <field name="sequence">31</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_31.png" />
+    </record>
+
+    <!-- bk_32.png -->
+    <record id="mana_dashboard.assets_bk_32" model="mana_dashboard.assets">
+        <field name="name">BG32</field>
+        <field name="sequence">32</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_32.png" />
+    </record>
+
+    <!-- bk_33.png -->
+    <record id="mana_dashboard.assets_bk_33" model="mana_dashboard.assets">
+        <field name="name">BG33</field>
+        <field name="sequence">33</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_33.png" />
+    </record>
+
+    <!-- bk_34.png -->
+    <record id="mana_dashboard.assets_bk_34" model="mana_dashboard.assets">
+        <field name="name">BG34</field>
+        <field name="sequence">34</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_34.png" />
+    </record>
+
+    <!-- bk_35.png -->
+    <record id="mana_dashboard.assets_bk_35" model="mana_dashboard.assets">
+        <field name="name">BG35</field>
+        <field name="sequence">35</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_35.png" />
+    </record>
+
+    <!-- bk_36.png -->
+    <record id="mana_dashboard.assets_bk_36" model="mana_dashboard.assets">
+        <field name="name">BG36</field>
+        <field name="sequence">36</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_36.png" />
+    </record>
+
+    <!-- bk_37.jpg -->
+    <record id="mana_dashboard.assets_bk_37" model="mana_dashboard.assets">
+        <field name="name">BG37</field>
+        <field name="sequence">37</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_37.jpg" />
+    </record>
+
+    <!-- bk_38.jpg -->
+    <record id="mana_dashboard.assets_bk_38" model="mana_dashboard.assets">
+        <field name="name">BG38</field>
+        <field name="sequence">38</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_38.jpg" />
+    </record>
+
+    <!-- bk_39.jpg -->
+    <record id="mana_dashboard.assets_bk_39" model="mana_dashboard.assets">
+        <field name="name">BG39</field>
+        <field name="sequence">39</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_39.jpg" />
+    </record>
+
+    <!-- bk_40.jpg -->
+    <record id="mana_dashboard.assets_bk_40" model="mana_dashboard.assets">
+        <field name="name">BG40</field>
+        <field name="sequence">40</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_40.jpg" />
+    </record>
+
+    <!-- bk_41.jpg -->
+    <record id="mana_dashboard.assets_bk_41" model="mana_dashboard.assets">
+        <field name="name">BG41</field>
+        <field name="sequence">41</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_41.jpg" />
+    </record>
+
+    <!-- bk_42.jpg -->
+    <record id="mana_dashboard.assets_bk_42" model="mana_dashboard.assets">
+        <field name="name">BG42</field>
+        <field name="sequence">42</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_42.jpg" />
+    </record>
+
+    <!-- bk_43.jpg -->
+    <record id="mana_dashboard.assets_bk_43" model="mana_dashboard.assets">
+        <field name="name">BG43</field>
+        <field name="sequence">43</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_43.jpg" />
+    </record>
+
+    <!-- bk_44.jpg -->
+    <record id="mana_dashboard.assets_bk_44" model="mana_dashboard.assets">
+        <field name="name">BG44</field>
+        <field name="sequence">44</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_44.jpg" />
+    </record>
+
+    <!-- bk_45.png -->
+    <record id="mana_dashboard.assets_bk_45" model="mana_dashboard.assets">
+        <field name="name">BG45</field>
+        <field name="sequence">45</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_45.png" />
+    </record>
+
+    <!-- bk_46.jpg -->
+    <record id="mana_dashboard.assets_bk_46" model="mana_dashboard.assets">
+        <field name="name">BG46</field>
+        <field name="sequence">46</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_46.jpg" />
+    </record>
+
+    <!-- bk_47.jpg -->
+    <record id="mana_dashboard.assets_bk_47" model="mana_dashboard.assets">
+        <field name="name">BG47</field>
+        <field name="sequence">47</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_47.jpg" />
+    </record>
+
+    <!-- bk_48.jpg -->
+    <record id="mana_dashboard.assets_bk_48" model="mana_dashboard.assets">
+        <field name="name">BG48</field>
+        <field name="sequence">48</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_48.jpg" />
+    </record>
+
+    <!-- bk_49.jpg -->
+    <record id="mana_dashboard.assets_bk_49" model="mana_dashboard.assets">
+        <field name="name">BG49</field>
+        <field name="sequence">49</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_49.jpg" />
+    </record>
+
+    <!-- bk_50.jpg -->
+    <record id="mana_dashboard.assets_bk_50" model="mana_dashboard.assets">
+        <field name="name">BG50</field>
+        <field name="sequence">50</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_50.jpg" />
+    </record>
+
+    <!-- bk_51.jpg -->
+    <record id="mana_dashboard.assets_bk_51" model="mana_dashboard.assets">
+        <field name="name">BG51</field>
+        <field name="sequence">51</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_51.jpg" />
+    </record>
+
+    <!-- bk_52.jpg -->
+    <record id="mana_dashboard.assets_bk_52" model="mana_dashboard.assets">
+        <field name="name">BG52</field>
+        <field name="sequence">52</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_52.jpg" />
+    </record>
+
+    <!-- bk_53.jpg -->
+    <record id="mana_dashboard.assets_bk_53" model="mana_dashboard.assets">
+        <field name="name">BG53</field>
+        <field name="sequence">53</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_53.jpg" />
+    </record>
+
+    <!-- bk_54.jpg -->
+    <record id="mana_dashboard.assets_bk_54" model="mana_dashboard.assets">
+        <field name="name">BG54</field>
+        <field name="sequence">54</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_54.jpg" />
+    </record>
+
+    <!-- bk_55.jpg -->
+    <record id="mana_dashboard.assets_bk_55" model="mana_dashboard.assets">
+        <field name="name">BG55</field>
+        <field name="sequence">55</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_55.jpg" />
+    </record>
+
+    <!-- bk_56.jpg -->
+    <record id="mana_dashboard.assets_bk_56" model="mana_dashboard.assets">
+        <field name="name">BG56</field>
+        <field name="sequence">56</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_56.jpg" />
+    </record>
+
+    <!-- bk_57.jpg -->
+    <record id="mana_dashboard.assets_bk_57" model="mana_dashboard.assets">
+        <field name="name">BG57</field>
+        <field name="sequence">57</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_57.jpg" />
+    </record>
+
+    <!-- bk_58.jpg -->
+    <record id="mana_dashboard.assets_bk_58" model="mana_dashboard.assets">
+        <field name="name">BG58</field>
+        <field name="sequence">58</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_58.jpg" />
+    </record>
+
+    <!-- bk_59.jpg -->
+    <record id="mana_dashboard.assets_bk_59" model="mana_dashboard.assets">
+        <field name="name">BG59</field>
+        <field name="sequence">59</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_59.jpg" />
+    </record>
+
+    <!-- bk_60.png -->
+    <record id="mana_dashboard.assets_bk_60" model="mana_dashboard.assets">
+        <field name="name">BG60</field>
+        <field name="sequence">60</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_60.png" />
+    </record>
+
+    <!-- bk_61.jpg -->
+    <record id="mana_dashboard.assets_bk_61" model="mana_dashboard.assets">
+        <field name="name">BG61</field>
+        <field name="sequence">61</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_61.jpg" />
+    </record>
+
+    <!-- bk_62.jpg -->
+    <record id="mana_dashboard.assets_bk_62" model="mana_dashboard.assets">
+        <field name="name">BG62</field>
+        <field name="sequence">62</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_62.jpg" />
+    </record>
+
+    <!-- bk_63.jpg -->
+    <record id="mana_dashboard.assets_bk_63" model="mana_dashboard.assets">
+        <field name="name">BG63</field>
+        <field name="sequence">63</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_63.jpg" />
+    </record>
+
+    <!-- bk_64.jpg -->
+    <record id="mana_dashboard.assets_bk_64" model="mana_dashboard.assets">
+        <field name="name">BG64</field>
+        <field name="sequence">64</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_64.jpg" />
+    </record>
+
+    <!-- bk_65.jpg -->
+    <record id="mana_dashboard.assets_bk_65" model="mana_dashboard.assets">
+        <field name="name">BG65</field>
+        <field name="sequence">65</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_65.jpg" />
+    </record>
+
+    <!-- bk_66.jpg -->
+    <record id="mana_dashboard.assets_bk_66" model="mana_dashboard.assets">
+        <field name="name">BG66</field>
+        <field name="sequence">66</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_66.jpg" />
+    </record>
+
+    <!-- bk_67.jpg -->
+    <record id="mana_dashboard.assets_bk_67" model="mana_dashboard.assets">
+        <field name="name">BG67</field>
+        <field name="sequence">67</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_67.jpg" />
+    </record>
+
+    <!-- bk_68.jpg -->
+    <record id="mana_dashboard.assets_bk_68" model="mana_dashboard.assets">
+        <field name="name">BG68</field>
+        <field name="sequence">68</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_68.jpg" />
+    </record>
+
+    <!-- bk_69.jpg -->
+    <record id="mana_dashboard.assets_bk_69" model="mana_dashboard.assets">
+        <field name="name">BG69</field>
+        <field name="sequence">69</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_69.jpg" />
+    </record>
+
+    <!-- bk_70.jpg -->
+    <record id="mana_dashboard.assets_bk_70" model="mana_dashboard.assets">
+        <field name="name">BG70</field>
+        <field name="sequence">70</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_70.jpg" />
+    </record>
+
+    <!-- bk_71.jpg -->
+    <record id="mana_dashboard.assets_bk_71" model="mana_dashboard.assets">
+        <field name="name">BG71</field>
+        <field name="sequence">71</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_71.jpg" />
+    </record>
+
+    <!-- bk_72.jpg -->
+    <record id="mana_dashboard.assets_bk_72" model="mana_dashboard.assets">
+        <field name="name">BG72</field>
+        <field name="sequence">72</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_72.jpg" />
+    </record>
+
+    <!-- bk_73.jpg -->
+    <record id="mana_dashboard.assets_bk_73" model="mana_dashboard.assets">
+        <field name="name">BG73</field>
+        <field name="sequence">73</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_73.jpg" />
+    </record>
+
+    <!-- bk_74.jpg -->
+    <record id="mana_dashboard.assets_bk_74" model="mana_dashboard.assets">
+        <field name="name">BG74</field>
+        <field name="sequence">74</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_74.jpg" />
+    </record>
+
+    <!-- bk_75.jpg -->
+    <record id="mana_dashboard.assets_bk_75" model="mana_dashboard.assets">
+        <field name="name">BG75</field>
+        <field name="sequence">75</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_75.jpg" />
+    </record>
+
+
+    <!-- bk_76.jpg -->
+    <record id="mana_dashboard.assets_bk_76" model="mana_dashboard.assets">
+        <field name="name">BG76</field>
+        <field name="sequence">76</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_76.jpg" />
+    </record>
+
+    <!-- bk_77.jpg -->
+    <record id="mana_dashboard.assets_bk_77" model="mana_dashboard.assets">
+        <field name="name">BG77</field>
+        <field name="sequence">77</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_77.jpg" />
+    </record>
+
+    <!-- bk_78.png -->
+    <record id="mana_dashboard.assets_bk_78" model="mana_dashboard.assets">
+        <field name="name">BG78</field>
+        <field name="sequence">78</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_78.png" />
+    </record>
+
+    <!-- bk_79.jpg -->
+    <record id="mana_dashboard.assets_bk_79" model="mana_dashboard.assets">
+        <field name="name">BG79</field>
+        <field name="sequence">79</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_79.jpg" />
+    </record>
+
+    <!-- bk_80.jpg -->
+    <record id="mana_dashboard.assets_bk_80" model="mana_dashboard.assets">
+        <field name="name">BG80</field>
+        <field name="sequence">80</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_80.jpg" />
+    </record>
+
+
+    <!-- bk_81.jpg -->
+    <record id="mana_dashboard.assets_bk_81" model="mana_dashboard.assets">
+        <field name="name">BG81</field>
+        <field name="sequence">81</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_81.jpg" />
+    </record>
+
+    <!-- bk_82.jpg -->
+    <record id="mana_dashboard.assets_bk_82" model="mana_dashboard.assets">
+        <field name="name">BG82</field>
+        <field name="sequence">82</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_82.jpg" />
+    </record>
+
+    <!-- bk_83.jpg -->
+    <record id="mana_dashboard.assets_bk_83" model="mana_dashboard.assets">
+        <field name="name">BG83</field>
+        <field name="sequence">83</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_83.jpg" />
+    </record>
+
+
+    <!-- bk_84.jpg -->
+    <record id="mana_dashboard.assets_bk_84" model="mana_dashboard.assets">
+        <field name="name">BG84</field>
+        <field name="sequence">84</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_84.jpg" />
+    </record>
+
+    <!-- bk_85.jpg -->
+    <record id="mana_dashboard.assets_bk_85" model="mana_dashboard.assets">
+        <field name="name">BG85</field>
+        <field name="sequence">85</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_85.jpg" />
+    </record>
+
+
+    <!-- bk_86.png -->
+    <record id="mana_dashboard.assets_bk_86" model="mana_dashboard.assets">
+        <field name="name">BG86</field>
+        <field name="sequence">86</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_86.png" />
+    </record>
+
+    <!-- bk_87.png -->
+    <record id="mana_dashboard.assets_bk_87" model="mana_dashboard.assets">
+        <field name="name">BG87</field>
+        <field name="sequence">87</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background" />
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_87.png" />
+    </record>
+
+    <!-- bk_88.png -->
+    <record id="mana_dashboard.assets_bk_88" model="mana_dashboard.assets">
+        <field name="name">BG88</field>
+        <field name="sequence">88</field>
+        <field name="system">1</field>
+        <field name="type" ref="mana_dashboard.assets_type_image" />
+        <field name="sub_type" ref="mana_dashboard.assets_subtype_background"/>
+        <field name="file" type="base64" file="mana_dashboard/static/images/background/bk_88.png" />
+    </record>
+
+    </data>
+</odoo>

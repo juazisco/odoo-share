@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Save and Discard Button-->
+<templates>
+    <t
+        t-name="minsa_theme.FormStatusIndicator"
+        t-inherit="web.FormStatusIndicator"
+        t-inherit-mode="extension"
+        owl="1"
+    >
+        <xpath expr="//button/i[(hasclass('fa-cloud-upload'))]" position="replace">
+            <span class="save_button">Save</span>
+        </xpath>
+        <xpath expr="//button/i[(hasclass('fa-undo'))]" position="replace">
+            <span class="discard_button">Discard</span>
+        </xpath>
+    </t>
+
+    <t
+        t-name="minsa_theme.Chatter"
+        t-inherit="mail.Chatter"
+        t-inherit-mode="extension"
+        owl="1"
+    >
+        <xpath expr="//button[(hasclass('o-mail-Chatter-activity'))]" position="replace">
+        </xpath>
+    </t>
+</templates>

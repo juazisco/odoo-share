@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+  <t t-name="mana_dashboard.json_editor">
+    <div class="d-flex">
+    </div>
+  </t>
+
+</templates>

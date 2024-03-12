@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+<t t-name="mana_dashboard.preview_auto_complete">
+    <span class="o_avatar_many2x_autocomplete o_avatar d-flex align-items-center">
+        <img t-if="option.value" class="rounded me-1"
+             t-attf-src="/web/image/{{option.resModel}}/{{option.value}}/preview" />
+        <t t-esc="option.label" />
+    </span>
+</t>
+
+<t t-name="mana_dashboard.preview_url_auto_complete">
+    <span class="o_avatar_many2x_autocomplete o_avatar d-flex align-items-center">
+        <img t-if="option.value" class="rounded me-1"
+             t-attf-src="{{option.preview_url}}" />
+        <t t-esc="option.label" />
+    </span>
+</t>
+
+</templates>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- multi group bar chart -->
+        <record id="mana_dashboard.template_multi_group_bar_chart" model="mana_dashboard.template">
+            <field name="name">Multi Group Bar Chart</field>
+            <field name="category">chart</field>
+            <field name="type">bar chart</field>
+            <field name="component_type">bar_chart</field>
+            <field name="preview" type="base64" file="mana_dashboard/static/previews/bar_chart/bar_chart_multi_group.png" />
+            <field name="has_styles">False</field>
+            <field name="has_template">False</field>
+            <field name="multi_data_source">0</field>
+            <field name="data_source_mode">mixed</field>
+            <field name="supported_result_types" eval="[(6, 0, [ref('mana_dashboard_base.result_type_standard')])]"/>
+            <field name="supported_series_types" eval="[(6, 0, [ref('mana_dashboard.series_type_bar'), ref('mana_dashboard.series_type_line')])]"/>
+            <field name="default_data_source_type" ref="mana_dashboard_base.data_source_none"/>   
+            <field name="scripts">
+                <![CDATA[
+        
+// get the datasource
+let data_sources = this.get_data_sources();
+if (data_sources.length == 0) {
+    return;
+}
+
+let legend_data = [];
+let series = [];
+for (let i = 0; i < data_sources.length; i++) {
+
+    let data_source = data_sources[i];
+    let has_multi_group_by = data_source.has_multi_group_by();
+
+    // get unique __group_by_name values
+    let group_by_values = data_source.get_unique_col_values('__group_by_name');
+    let categories = data_source.get_categories();
+    if (categories.length == 0) {
+        continue
+    }
+    let category = categories[0];
+    let category_values = data_source.get_unique_col_values(category);
+    let measures = data_source.get_measures();
+
+    for (let j = 0; j < measures.length; j++) {
+        let measure = measures[j];
+        let raw_field = data_source.get_raw_field(measures[i])
+        if (has_multi_group_by) {
+            // __group_by_names
+            for (let k = 0; k < group_by_values.length; k++) {
+                let group_by_value = group_by_values[k];
+                let datas = data_source.get_group_by_name_values(group_by_value, measure, category_values, category);
+                let name = '';
+                if (measures.length > 1) {
+                    name = group_by_value + ' - ' + measure;
+                } else {
+                    name = group_by_value;
+                }
+                legend_data.push(name);
+                series.push({
+                    data: datas,
+                    type: raw_field && raw_field.series_type || 'bar',
+                    showBackground: true,
+                    name: name,
+                    backgroundStyle: {
+                        color: 'rgba(180, 180, 180, 0.2)'
+                    }
+                })
+            }
+        } else {
+            series.push({
+                data: data_source.get_col_values(measure),
+                type: 'bar',
+                showBackground: true,
+                name: measure,
+                backgroundStyle: {
+                    color: 'rgba(180, 180, 180, 0.2)'
+                }
+            })
+            if (measures.length > 1) {
+                legend_data.push(measure);
+            }
+        }
+    }
+}
+
+let data_source = data_sources[0];
+let has_multi_group_by = data_source.has_multi_group_by();
+// get the catorgories
+let categories = data_source.get_categories();
+if (categories.length == 0) {
+    return;
+}
+let category = categories[0];
+let category_values = data_source.get_unique_col_values(category);
+let option = undefined;
+// generate the option, you can change the title, legend, tooltip, etc.
+if (has_multi_group_by) {
+    option = {
+        xAxis: {
+            type: 'category',
+            data: category_values
+      },
+      legend: {
+          data: legend_data
+      },
+      yAxis: {
+          type: 'value'
+      },
+      series: series
+    }
+} else {
+    option = {
+        xAxis: {
+            type: 'category',
+            data: data_source.get_col_values(categories[0]),
+      },
+      legend: {
+          data: legend_data
+      },
+      yAxis: {
+          type: 'value'
+      },
+      series: series
+    }
+}
+
+this.setOption(option)
+]]>
+            </field>
+            <!-- default script -->
+            <field name="default_scripts">
+                <![CDATA[
+let option = {
+  legend: {},
+  tooltip: {},
+  dataset: {
+    dimensions: ['product', '2015', '2016', '2017'],
+    source: [
+      { product: 'Matcha Latte', 2015: 43.3, 2016: 85.8, 2017: 93.7 },
+      { product: 'Milk Tea', 2015: 83.1, 2016: 73.4, 2017: 55.1 },
+      { product: 'Cheese Cocoa', 2015: 86.4, 2016: 65.2, 2017: 82.5 },
+      { product: 'Walnut Brownie', 2015: 72.4, 2016: 53.9, 2017: 39.1 }
+    ]
+  },
+  xAxis: { type: 'category' },
+  yAxis: {},
+  // Declare several bar series, each will be mapped
+  // to a column of dataset.source by default.
+  series: [{ type: 'bar' }, { type: 'bar' }, { type: 'bar' }]
+};
+this.setOption(option);
+]]>
+            </field>
+        </record>
+
+    </data>
+</odoo>

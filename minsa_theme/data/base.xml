@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- #################### RES.COMPANY #################### -->
+    <record model="res.company" id="base.main_company">
+        <field name="favicon" type="base64" file="minsa_theme/static/description/icon.png" />
+        <field name="appbar_image" type="base64" file="minsa_theme/static/img/logo.png" />
+    </record>
+
+</odoo>
